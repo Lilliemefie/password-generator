@@ -5,7 +5,7 @@ var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 var numeric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var symbols = ["!", "#", "$", "%", "&", "+", "-", ".", "/", "<", "=", ">", "?", "@"];
 
-
+// Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -17,14 +17,20 @@ generateBtn.addEventListener("click", writePassword);
 
 
 function generatePassword() {
-// Prompt to confirm how many characters the user would like to have in the password
+// Prompt to ask the user; how many characters the user would like to have in the password
 var lengthNo = prompt("How many characters would you like? Choose between 8 and 128");
+if (lengthNo === null){
+  return;
+}
+// if the user put the alphabet or symbols, it will return to function "generatPassword"
 if(isNaN(lengthNo)){
   alert("You must input a number!");
   return generatePassword()
 }
+// if the user put the number less than 8 or more than 128, it will return to function "generatPassword"
 if (lengthNo < 8 || lengthNo > 128){
-prompt ("Please choose minimum 8 characters or maximum 128 characters!");
+   alert("Please choose minimum 8 characters or maximum 128 characters!");
+   return generatePassword()
 }
 
 //confirm window which characters the user would like to use
