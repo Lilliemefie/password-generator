@@ -4,7 +4,7 @@ var lowerCase = "abcdefghijklmnopqurstuvwxyz";
 var upperCase = "ABCDEFGHIJKLMNOPQURSTUVWXYZ";
 var numeric = "0123456789";
 var symbols = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-
+var pickedChar = "";
 
 // Write password to the #password input, created function
 function writePassword() {
