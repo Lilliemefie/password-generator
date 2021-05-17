@@ -4,19 +4,17 @@ var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var numeric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var symbols = ["!", "#", "$", "%", "&", "+", "-", ".", "/", "<", "=", ">", "?", "@"];
-var result = "";
 
 
-// Write password to the #password input, created function
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 }
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
 
 function generatePassword() {
 // Prompt to confirm how many characters the user would like to have in the password
@@ -38,33 +36,34 @@ var confirmSymbols = confirm("Would you like to include special characters?");
 if(confirmUpper === false && confirmLower === false && confirmSymbols === false && confirmNumeric === false) {
     alert("You must choose at least one character");
     return generatePassword()
-}
-
-  
+};
 
 var selectedChar = [];
 
 if(confirmLower === true){
-  (selectedChar.push(lowerCase));
-}
+  selectedChar = selectedChar.concat(lowerCase)
+};
 
 if(confirmUpper === true){
-  (selectedChar.push(upperCase));
-}
+  selectedChar = selectedChar.concat(upperCase)
+};
 
 if(confirmNumeric === true){
-  (selectedChar.push(numeric));
-}
+  selectedChar = selectedChar.concat(numeric)
+};
 
 if(confirmSymbols === true){
-  (selectedChar.push(symbols);
+  selectedChar = selectedChar.concat(symbols)
+};
+console.log(selectedChar);
+
+var passwordnw = [];
+
+for (var i = 0; i < lengthNo; i++) {
+  passwordnw.push(selectedChar[(Math.floor(Math.random() * selectedChar.length))]);
 }
-
-
-
-
-
-
+ var x = passwordnw.join("");
+ return x 
 
 
 };
