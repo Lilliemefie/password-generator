@@ -15,8 +15,8 @@ The user can choose the criteria that the user like, following;
 3. Then the window will prompt and ask which criteria the user would like to include; lowercase letters, uppercase letters, numbers and special characters. If the user selcets non to all criteria, it will loop to the beginning again. 
 4. When all question have been defined, the random generated password will appear within the password box. 
 
-## You can click at the image below to deploy the application
-[https://github.com/Lilliemefie/password-generator/blob/main/assets/password%20generator.gif](https://lilliemefie.github.io/password-generator/)
+## You can get your random password here: 
+![https://github.com/Lilliemefie/password-generator/blob/main/assets/password%20generator.gif](https://lilliemefie.github.io/password-generator/)
 
 Language used:
 - Javascript
