@@ -16,7 +16,7 @@ The user can choose the criteria that the user like, following;
 4. When all question have been defined, the random generated password will appear within the password box. 
 
 ## You can click at the image below to deploy the application
-[/Users/lillie/class_activities /password-generator/assets/password generator.gif](https://lilliemefie.github.io/password-generator/)
+[https://github.com/Lilliemefie/password-generator/blob/main/assets/password%20generator.gif](https://lilliemefie.github.io/password-generator/)
 
 Language used:
 - Javascript
