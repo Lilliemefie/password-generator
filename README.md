@@ -16,7 +16,9 @@ The user can choose the criteria that the user like, following;
 4. When all question have been defined, the random generated password will appear within the password box. 
 
 ## You can get your random password here: 
-![https://github.com/Lilliemefie/password-generator/blob/main/assets/password%20generator.gif](https://lilliemefie.github.io/password-generator/)
+[lilliemefie.github.io/password-generator/](https://lilliemefie.github.io/password-generator/)
+
+![Screenshot](https://github.com/Lilliemefie/password-generator/blob/main/assets/password%20generator.gif)
 
 Language used:
 - Javascript
