@@ -1,11 +1,11 @@
+// Assigned variables
 var generateBtn = document.querySelector("#generate");
-var passwordText = document.querySelector("#password")
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var numeric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var symbols = ["!", "#", "$", "%", "&", "+", "-", ".", "/", "<", "=", ">", "?", "@"];
 
-// Write password to the #password input
+// to write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -44,8 +44,11 @@ if(confirmUpper === false && confirmLower === false && confirmSymbols === false 
     return generatePassword()
 };
 
+// add variable to an array 
 var selectedChar = [];
 
+// giving conditions to each characters that the user will select (by clicking on confirm window)
+// on confirm window, if the user clicked "OK", the value = true, if clicked "Cancel", the value = false
 if(confirmLower === true){
   selectedChar = selectedChar.concat(lowerCase)
 };
@@ -63,8 +66,10 @@ if(confirmSymbols === true){
 };
 console.log(selectedChar);
 
+//add variable to an array placeholder for user generated amount of length
 var passwordnw = [];
 
+//Run for loop to use confirmed information and generate password as a result
 for (var i = 0; i < lengthNo; i++) {
   passwordnw.push(selectedChar[(Math.floor(Math.random() * selectedChar.length))]);
 }
