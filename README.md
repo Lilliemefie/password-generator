@@ -31,4 +31,7 @@ References:
 - [Webday](https://webday.co/category/javascript/)
 - [StackOverflow](https://stackoverflow.com/) 
 
+## License
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) 
+
 
